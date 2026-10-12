@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+    padding-top: 150px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    color: #cbd5e1;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #38bdf8;
+}
+.boutons {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.principal {
+    background-color: #38bdf8;
+    color: #0f172a;
+}
+
+.secondaire {
+    border: 2px solid #38bdf8;
+    color: #38bdf8;
+}
+.apropos {
+    margin-top: 180px;
+    padding: 80px 20%;
+    background-color: #1e293b;
+}
+
+.apropos h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #38bdf8;
+}
+
+.apropos p {
+    max-width: 800px;
+    margin: 0 auto 15px;
+    line-height: 1.8;
+    font-size: 18px;
+}
+.competences {
+    padding: 80px 8%;
+    background-color: #0f172a;
+}
+
+.competences h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #38bdf8;
+}
+
+.liste-competences {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.competence {
+    background-color: #1e293b;
+    width: 250px;
+    padding: 30px 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.competence:hover {
+    transform: translateY(-8px);
+}
+
+.competence h3 {
+    color: #38bdf8;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.competence p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+.projets {
+    padding: 80px 8%;
+    background-color: #1e293b;
+}
+
+.projets h2 {
+    font-size: 36px;
+    color: #38bdf8;
+    margin-bottom: 40px;
+}
+
+.projet {
+    max-width: 900px;
+    margin: auto;
+    background-color: #0f172a;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.projet img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.projet h3 {
+    font-size: 26px;
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.projet .technologies {
+    margin-top: 20px;
+    color: #38bdf8;
+    font-weight: bold;
+}
+.btn-projet {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background-color: #38bdf8;
+    color: #0f172a;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-projet:hover {
+    transform: translateY(-3px);
+}
+
+.contact {
+    padding: 80px 20px;
+    background-color: #0f172a;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+.contact > p {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-info p {
+    background-color: #1e293b;
+    padding: 18px 30px;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #020617;
+    padding: 25px;
+    text-align: center;
+}
+
+footer p {
+    color: #94a3b8;
+    font-size: 14px;
+}
+@media (max-width: 768px) {
+
+    body {
+        padding-top: 120px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .boutons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 250px;
+    }
+
+    .apropos {
+        padding: 60px 25px;
+    }
+
+    .liste-competences {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .competence {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .projets {
+        padding: 60px 20px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+}
